@@ -41,7 +41,7 @@ export default {
       this.textColorChangeObj = colorHash.changeColor(code);
       this.bgColor = this.textColorChangeObj.logoColor;
       this.textColor = this.textColorChangeObj.txtColor;
-      console.log(this.textColorChangeObj);
+      console.log(this.textColorChangeObj+'');
     }
   }
 };
