@@ -1,10 +1,13 @@
 export function changeColor( code ) {
     var bgColor = "#" + intToRGB( hashCode( code ) );
-    document.body.style.backgroundColor = bgColor;
+    //document.body.style.backgroundColor = bgColor;
+
     var textColor = invertColor( bgColor );
+    document.body.style.backgroundImage = "-webkit-linear-gradient(" + bgColor + " , " + textColor + ")";
+    document.body.style.backgroundRepeat = "no-repeat";
     var obj = {
         logoColor: bgColor,
-        txtColor: textColor
+        txtColor: invertColor( textColor, true )
     }
     return obj;
 }
