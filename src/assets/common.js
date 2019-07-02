@@ -4,6 +4,8 @@ export function changeColor( code ) {
 
     var textColor = invertColor( bgColor );
     document.getElementById( "ashish" ).style.backgroundImage = "-webkit-linear-gradient(" + bgColor + " , " + textColor + ")";
+    //IE Support
+    document.getElementById( "ashish" ).style.backgroundImage = "linear-gradient(" + bgColor + " , " + textColor + ")";
     document.getElementById( "ashish" ).style.backgroundRepeat = "no-repeat";
     var obj = {
         logoColor: bgColor,
