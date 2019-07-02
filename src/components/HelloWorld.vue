@@ -13,6 +13,8 @@
     <h2 v-bind:style="{color : textColor}">{{selectedGuid}}</h2>
     <h2 v-bind:style="{color : textColor}">{{bgColor}}</h2>
     <h2 v-bind:style="{color : textColor}">{{textColor}}</h2>
+    <div id="ashish" alt="Avatar" style="width:50px; height: 50px; border-radius: 50%; font-weight:800;">
+      <span :style="'color:'+textColor">AG</span></div>
   </div>
 </template>
 
@@ -62,5 +64,23 @@ li {
 }
 a {
   color: #42b983;
+}
+img {
+  border-radius: 50%;
+}
+#ashish {
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    padding: 5px;
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+    border: 1px solid #ccc;
+    background-color: #f3f3f3;
+}
+#ashish span {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
 }
 </style>

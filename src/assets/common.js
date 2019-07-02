@@ -3,8 +3,8 @@ export function changeColor( code ) {
     //document.body.style.backgroundColor = bgColor;
 
     var textColor = invertColor( bgColor );
-    document.body.style.backgroundImage = "-webkit-linear-gradient(" + bgColor + " , " + textColor + ")";
-    document.body.style.backgroundRepeat = "no-repeat";
+    document.getElementById( "ashish" ).style.backgroundImage = "-webkit-linear-gradient(" + bgColor + " , " + textColor + ")";
+    document.getElementById( "ashish" ).style.backgroundRepeat = "no-repeat";
     var obj = {
         logoColor: bgColor,
         txtColor: invertColor( textColor, true )
